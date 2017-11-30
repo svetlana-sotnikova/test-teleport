@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("static/fonts/myriadpro-light.eot");
+  src: local('static/fonts/myriadpro-light'), url("static/fonts/myriadpro-light.eot?#iefix") format('embedded-opentype'), url("static/fonts/myriadpro-light.woff") format('woff'), url("static/fonts/myriadpro-light.ttf") format('truetype'), url("static/fonts/myriadpro-light.svg#myriadpro-light") format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("static/fonts/myriadpro-regular.eot");
+  src: local('static/fonts/myriadpro-regular'), url("static/fonts/myriadpro-regular.eot?#iefix") format('embedded-opentype'), url("static/fonts/myriadpro-regular.woff") format('woff'), url("static/fonts/myriadpro-regular.ttf") format('truetype'), url("static/fonts/myriadpro-regular.svg#myriadpro-regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.text__simple,
+.basis,
+.header__link {
+  font-family: 'Myriad Pro';
+  line-height: 1.2;
+  color: #101026;
+}
+.basis {
+  margin: 0;
+}
+.basis__elem {
+  min-width: 1000px;
+  max-width: 1200px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.header {
+  border-bottom: 1px #f00 solid;
+}
+.header__left {
+  float: left;
+  margin-right: 20px;
+}
+.header__logo {
+  display: block;
+  float: left;
+  margin-right: 30px;
+  background: url("static/logo.svg") no-repeat;
+  background-size: 61px 33px;
+  height: 33px;
+  width: 61px;
+}
+.header__link {
+  float: left;
+  margin: 0 30px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.header__right {
+  float: right;
+}
+.header__icon {
+  display: block;
+  float: left;
+  background: url("static/icon.svg") no-repeat;
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+  margin: 0 20px;
+}
+.header__user {
+  float: left;
+}
+.header__balance {
+  float: left;
+  margin: 0 20px;
+}
+.header__ava {
+  float: left;
+  display: block;
+  float: left;
+  height: 29px;
+  width: 29px;
+  background: url("static/ava.svg") no-repeat;
+  background-size: 29px 29px;
+  margin: 0 20px;
+}
+.header__username {
+  float: left;
+}
+.header__logout {
+  display: block;
+  float: left;
+  background: url("static/logout.svg") no-repeat;
+  background-size: 17px 22px;
+  height: 22px;
+  width: 17px;
+  margin: 0 20px;
+}

@@ -1,2 +1,53 @@
+// Colors
+cDarkBlue = #101026
+
+// Fonts
+@font-face
+  font-family 'Myriad Pro'
+  src url('static/fonts/myriadpro-light.eot')
+  src local('static/fonts/myriadpro-light'),
+      url('static/fonts/myriadpro-light.eot?#iefix') format('embedded-opentype'),
+      url('static/fonts/myriadpro-light.woff') format('woff'),
+      url('static/fonts/myriadpro-light.ttf') format('truetype'),
+      url('static/fonts/myriadpro-light.svg#myriadpro-light') format('svg')
+  font-weight 300
+  font-style normal
+
+@font-face
+  font-family 'Myriad Pro'
+  src url('static/fonts/myriadpro-regular.eot')
+  src local('static/fonts/myriadpro-regular'),
+      url('static/fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'),
+      url('static/fonts/myriadpro-regular.woff') format('woff'),
+      url('static/fonts/myriadpro-regular.ttf') format('truetype'),
+      url('static/fonts/myriadpro-regular.svg#myriadpro-regular') format('svg')
+  font-weight normal
+  font-style normal
+
+
+// Cleafix function and class
+clearfix()
+  &:after
+    content " "
+    display table
+    clear both
+.clearfix
+  clearfix()
+
+.text__simple
+  font-family 'Myriad Pro'
+  line-height 1.2
+  color cDarkBlue
+
+.basis
+  @extends .text__simple
+  margin 0
+
+.basis__elem
+  min-width 1000px
+  max-width 1200px
+  padding 0 20px
+  margin 0 auto
+
 // Blocks
-@require 'blocks/header/index.styl'
+@require 'blocks/header/header.styl'
