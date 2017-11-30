@@ -1,0 +1,30 @@
+{
+  "name": "test-teleport",
+  "version": "0.0.1",
+  "description": "Тестовое задание для Телепорт",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "server": "node index.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "site",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Svetlana Troshina <svetlana.data@gmail.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-stylus": "^2.6.0",
+    "nib": "^1.1.2"
+  }
+}
