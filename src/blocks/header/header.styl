@@ -1,38 +1,51 @@
 .header
-  // margin 25px 20px
-  border-bottom 1px red solid
+  padding 24px 0
+  border-bottom 1px solid cLightGrey
 
 .header__left
+  line-height 1.25
   float left
-  margin-right 20px
 
 .header__logo
   display block
   float left
-  margin-right 30px
+  margin 0 15px 0 0
   background url('static/logo.svg') no-repeat
-  background-size 61px 33px
-  height 33px
-  width 61px
+  background-size 60px 32px
+  height 32px
+  width 60px
+
+.header__links
+  float left
+  padding 6px 0
 
 .header__link
   @extends .text__simple
+  line-height 1.25
   float left
-  margin 0 30px
+  margin 0 15px
   font-size 16px
   text-decoration none
 
+// .header__link:hover
+//   border-bottom 4px solid #06a8ff
+
 .header__right
   float right
+  line-height 1.25
 
-.header__icon
-  display block
+.header__skype-wrapper
   float left
+  padding 2px 20px
+  border-left 1px solid cLightGrey
+  border-right 1px solid cLightGrey
+
+.header__skype
+  display block
   background url('static/icon.svg') no-repeat
   background-size 28px 28px
   height 28px
   width 28px
-  margin 0 20px
 
 
 // .header__balance-currency
@@ -41,21 +54,25 @@
   float left
 
 .header__balance
+  @extends .text__regular
   float left
-  margin 0 20px
+  margin 4px 10px
+  font-size 20px
+  line-height 1.2
 
 .header__ava
   float left
   display block
-  float left
   height 29px
   width @height
   background url('static/ava.svg') no-repeat
   background-size @height @height
-  margin 0 20px
+  margin 1.5px 10px
 
 .header__username
   float left
+  margin 5px 0
+  font-size 18px
 
 .header__logout
   display block
@@ -64,5 +81,4 @@
   background-size 17px 22px
   height 22px
   width 17px
-  margin 0 20px
-
+  margin 5px 0 5px 10px

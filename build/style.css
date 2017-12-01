@@ -17,75 +17,108 @@
   display: table;
   clear: both;
 }
+.mockup {
+  background: url("media/mockup.png") center top no-repeat;
+  background-size: 1000px 1432px;
+  width: 1000px;
+  height: 1432px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  bottom: auto;
+  margin: auto;
+  opacity: 0.2;
+  display: none;
+}
 .text__simple,
 .basis,
+.basis__elem,
 .header__link {
   font-family: 'Myriad Pro';
+  font-weight: 300;
   line-height: 1.2;
   color: #101026;
+}
+.text__regular,
+.header__balance {
+  font-weight: normal;
 }
 .basis {
   margin: 0;
 }
 .basis__elem {
-  min-width: 1000px;
-  max-width: 1200px;
+  width: 960px;
   padding: 0 20px;
   margin: 0 auto;
 }
 .header {
-  border-bottom: 1px #f00 solid;
+  padding: 24px 0;
+  border-bottom: 1px solid #c3ccd3;
 }
 .header__left {
+  line-height: 1.25;
   float: left;
-  margin-right: 20px;
 }
 .header__logo {
   display: block;
   float: left;
-  margin-right: 30px;
+  margin: 0 15px 0 0;
   background: url("static/logo.svg") no-repeat;
-  background-size: 61px 33px;
-  height: 33px;
-  width: 61px;
+  background-size: 60px 32px;
+  height: 32px;
+  width: 60px;
+}
+.header__links {
+  float: left;
+  padding: 6px 0;
 }
 .header__link {
+  line-height: 1.25;
   float: left;
-  margin: 0 30px;
+  margin: 0 15px;
   font-size: 16px;
   text-decoration: none;
 }
 .header__right {
   float: right;
+  line-height: 1.25;
 }
-.header__icon {
-  display: block;
+.header__skype-wrapper {
   float: left;
+  padding: 2px 20px;
+  border-left: 1px solid #c3ccd3;
+  border-right: 1px solid #c3ccd3;
+}
+.header__skype {
+  display: block;
   background: url("static/icon.svg") no-repeat;
   background-size: 28px 28px;
   height: 28px;
   width: 28px;
-  margin: 0 20px;
 }
 .header__user {
   float: left;
 }
 .header__balance {
   float: left;
-  margin: 0 20px;
+  margin: 4px 10px;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .header__ava {
   float: left;
   display: block;
-  float: left;
   height: 29px;
   width: 29px;
   background: url("static/ava.svg") no-repeat;
   background-size: 29px 29px;
-  margin: 0 20px;
+  margin: 1.5px 10px;
 }
 .header__username {
   float: left;
+  margin: 5px 0;
+  font-size: 18px;
 }
 .header__logout {
   display: block;
@@ -94,5 +127,5 @@
   background-size: 17px 22px;
   height: 22px;
   width: 17px;
-  margin: 0 20px;
+  margin: 5px 0 5px 10px;
 }

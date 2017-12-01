@@ -1,5 +1,6 @@
 // Colors
 cDarkBlue = #101026
+cLightGrey = #c3ccd3
 
 // Fonts
 @font-face
@@ -34,18 +35,38 @@ clearfix()
 .clearfix
   clearfix()
 
+.mockup
+  background url('media/mockup.png') center top no-repeat
+  background-size 1000px 1432px
+  width 1000px
+  height 1432px
+  position absolute
+  right 0
+  top 0
+  left 0
+  bottom auto
+  margin auto
+  opacity 0.2
+  display none
+
 .text__simple
   font-family 'Myriad Pro'
+  font-weight 300
   line-height 1.2
   color cDarkBlue
+
+.text__regular
+  font-weight normal
 
 .basis
   @extends .text__simple
   margin 0
 
 .basis__elem
-  min-width 1000px
-  max-width 1200px
+  @extends .text__simple
+  // min-width 1000px
+  // max-width 1200px
+  width 960px
   padding 0 20px
   margin 0 auto
 
