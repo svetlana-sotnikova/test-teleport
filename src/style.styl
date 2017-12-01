@@ -1,6 +1,7 @@
 // Colors
 cDarkBlue = #101026
 cLightGrey = #c3ccd3
+cCyan = #06a8ff
 
 // Fonts
 @font-face
@@ -70,5 +71,13 @@ clearfix()
   padding 0 20px
   margin 0 auto
 
+.text__h1
+  @extends .text__simple
+  font-size 35px
+  padding-top 25px
+  padding-bottom 25px
+
 // Blocks
 @require 'blocks/header/header.styl'
+@require 'blocks/content/content.styl'
+@require 'blocks/tabs/tabs.styl'

@@ -1,6 +1,7 @@
 .header
   padding 24px 0
   border-bottom 1px solid cLightGrey
+  margin-bottom 28px
 
 .header__left
   line-height 1.25
@@ -23,7 +24,7 @@
   @extends .text__simple
   line-height 1.25
   float left
-  margin 0 15px
+  margin 0 14px
   font-size 16px
   text-decoration none
 
@@ -36,7 +37,7 @@
 
 .header__skype-wrapper
   float left
-  padding 2px 20px
+  padding 2px 19px
   border-left 1px solid cLightGrey
   border-right 1px solid cLightGrey
 
@@ -47,18 +48,15 @@
   height 28px
   width 28px
 
-
-// .header__balance-currency
-
 .header__user
   float left
 
 .header__balance
   @extends .text__regular
   float left
-  margin 4px 10px
+  padding 3px 14px
   font-size 20px
-  line-height 1.2
+  line-height 1.2S
 
 .header__ava
   float left
@@ -67,11 +65,12 @@
   width @height
   background url('static/ava.svg') no-repeat
   background-size @height @height
-  margin 1.5px 10px
+  padding 1.5px 0
 
 .header__username
   float left
-  margin 5px 0
+  max-width 170px
+  padding 5px 8px
   font-size 18px
 
 .header__logout

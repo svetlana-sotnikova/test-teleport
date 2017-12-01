@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="1" viewBox="0 0 100 1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #06a8ff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="-2" width="102" height="1"/>
+</svg>
