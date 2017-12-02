@@ -29,7 +29,32 @@
       <h1 class="content__h1">Статистика</h1>
       <div class="basis__elem">
         <div class="tabs clearfix"><a class="tabs__item tabs__item_active" href="#">WEB</a><a class="tabs__item" href="#">API</a></div>
-        <div class="button__group"><a class="button button__active" href="#" style="margin-right: 20px;">Сегодня</a><a class="button" href="#">Вчера</a><a class="button" href="#">Неделя</a><a class="button" href="#">Месяц</a><a class="button" href="#">Квартал</a><a class="button" href="#">Год</a></div>
+        <div class="clearfix">
+          <div class="clearfix__left">
+            <div class="button__group"><a class="button button__active" href="#" style="margin-right: 20px;">Сегодня</a><a class="button" href="#">Вчера</a><a class="button" href="#">Неделя</a><a class="button" href="#">Месяц</a><a class="button" href="#">Квартал</a><a class="button" href="#">Год</a></div>
+          </div>
+          <div class="clearfix__right">
+            <div class="period__wrapper clearfix">
+              <div class="period__label">Период:</div>
+              <div class="period clearfix">
+                <input class="period__input" type="date" id="period-from" value="2017-08-26">
+                <label class="period__icon" for="period-from"></label><span class="period__separator"></span>
+                <input class="period__input" type="date" id="period-to" value="2017-12-30">
+                <label class="period__icon" for="period-to"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix">
+          <div class="clearfix__left field__line">
+            <label class="field__label" for="sub-id1"><span class="field__number">1</span>. SUB ID:</label>
+            <input class="field__input" type="text" id="sub-id1">
+          </div>
+          <div class="clearfix__left field__line">
+            <label class="field__label" for="sub-id2"><span class="field__number">2</span>. SUB ID:</label>
+            <input class="field__input" type="text" id="sub-id2">
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -4,4 +4,10 @@
 
   .basis__elem
     include ../tabs/tabs.pug
-    include ../button/button.pug
+    .clearfix
+      .clearfix__left
+        include ../button/button.pug
+      .clearfix__right
+        include ../period/period.pug
+
+    include ../field/field.pug

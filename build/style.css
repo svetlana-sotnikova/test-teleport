@@ -17,6 +17,12 @@
   display: table;
   clear: both;
 }
+.clearfix__left {
+  float: left;
+}
+.clearfix__right {
+  float: right;
+}
 .mockup {
   background: url("media/mockup.png") center top no-repeat;
   background-size: 1000px 1432px;
@@ -36,8 +42,12 @@
 .basis__elem,
 .text__h1,
 .header__link,
-.content__h1 {
+.content__h1,
+.period__input,
+.field__label,
+.field__input {
   font-family: 'Myriad Pro';
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.2;
   color: #101026;
@@ -168,7 +178,8 @@
 .tabs__item_active:hover {
   border-bottom: 4px solid #06a8ff;
 }
-.button__group {
+.button__group,
+float left {
   padding: 30px 0;
 }
 .button {
@@ -176,7 +187,7 @@
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 12px 18px;
   color: #95969e;
 }
@@ -191,4 +202,70 @@
 }
 .button__active:hover {
   border: 1px solid #06a8ff;
+}
+.period__wrapper {
+  padding: 30px 0;
+  font-size: 18px;
+}
+.period {
+  float: left;
+  border: 1px solid #c3ccd3;
+  border-radius: 4px;
+  padding: 11px 19px;
+}
+.period__label {
+  float: left;
+  display: block;
+  padding: 12px 10px 12px 0;
+}
+.period__input {
+  float: left;
+  display: block;
+  border: none;
+  color: #95969e;
+  font-size: 18px;
+  width: 83px;
+  height: 1.16em;
+  padding: 0;
+  outline: none;
+}
+.period__icon {
+  float: left;
+  display: block;
+  background: url("static/period__icon.svg") no-repeat;
+  height: 14px;
+  width: 14px;
+  background-size: 14px 14px;
+  margin: 4px 0 4px 5px;
+}
+input.period__input::-webkit-clear-button,
+input.period__input::-webkit-inner-spin-button,
+input.period__input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.period__separator {
+  float: left;
+  display: block;
+  margin: 0 8px;
+}
+.period__separator:after {
+  content: '–';
+}
+.field__label {
+  font-size: 18px;
+  color: #101026;
+}
+.field__number {
+  color: #06a8ff;
+}
+.field__input {
+  font-size: 18px;
+  color: #101026;
+  border: none;
+  padding: 0;
+}
+.field__line {
+  border-bottom: 1px solid #c3ccd3;
+  margin-right: 30px;
 }

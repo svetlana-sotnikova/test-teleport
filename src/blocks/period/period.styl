@@ -1,0 +1,50 @@
+.period__wrapper
+  padding 30px 0
+  font-size 18px
+
+.period
+  float left
+  border 1px solid cLightGrey
+  border-radius 4px
+  padding 11px 19px
+
+.period__label
+  float left
+  display block
+  padding 12px 10px 12px 0
+
+.period__input
+  @extends .text__simple
+  float left
+  display block
+  border none
+  color cGrey
+  font-size 18px
+  width 83px
+  height 1.16em
+  padding 0
+  outline none
+
+.period__icon
+  float left
+  display block
+  background url("static/period__icon.svg") no-repeat
+  height 14px
+  width @height
+  background-size @height @height
+  margin 4px 0 4px 5px
+
+input.period__input
+  &::-webkit-clear-button,
+  &::-webkit-inner-spin-button,
+  &::-webkit-calendar-picker-indicator
+    display none
+    -webkit-appearance none
+
+.period__separator
+  float left
+  display block
+  margin 0 8px
+
+  &:after
+    content '–'
