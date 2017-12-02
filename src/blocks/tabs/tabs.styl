@@ -1,5 +1,6 @@
 .tabs
   font-size 22px
+  padding-bottom 30px
 
 .tabs__item
   float left
@@ -10,7 +11,15 @@
   line-height 3.1
   border-bottom 1px solid cLightGrey
   box-sizing border-box
+  text-decoration none
+  color cDarkBlue
+
+  &:hover
+    border-bottom 4px solid cLightGrey
 
 .tabs__item_active
   @extends .text__regular
   border-bottom 4px solid cCyan
+
+  &:hover
+    border-bottom @border-bottom
