@@ -1,0 +1,12 @@
+<svg id="Группа_1" data-name="Группа 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="3" viewBox="0 0 14 3">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6f6f74;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <image id="Слой_1" data-name="Слой 1" width="14" height="3" xlink:href="data:img/png;base64,"/>
+  <path id="_._" data-name=". " class="cls-1" d="M3,2.261a0.711,0.711,0,0,0,.168-0.48,0.724,0.724,0,0,0-.16-0.488,0.53,0.53,0,0,0-.423-0.187,0.551,0.551,0,0,0-.43.188,0.7,0.7,0,0,0-.168.488,0.659,0.659,0,0,0,.153.473,0.519,0.519,0,0,0,.416.2H2.575A0.543,0.543,0,0,0,3,2.261Z"/>
+</svg>

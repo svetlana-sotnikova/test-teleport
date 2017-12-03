@@ -1,0 +1,30 @@
+table.table
+  tr.table__row
+    td.table__data
+      input(type="checkbox", id="r1").table__checkbox
+      .table__content
+        .basis__elem
+          label(for="r1") content
+
+  tr.table__row
+    td.table__data
+      input(type="checkbox", id="r2").table__checkbox
+      .table__content
+        .basis__elem
+          include ../inner-table/inner-table.pug
+          include ../hidden-table/hidden-table.pug
+
+  tr.table__row
+    td.table__data
+      .table__content
+        .basis__elem content
+
+  tr.table__row
+    td.table__data
+      .table__content
+        .basis__elem content
+
+  tr.table__row
+    td.table__data
+      .table__content
+        .basis__elem content

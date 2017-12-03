@@ -1,0 +1,19 @@
+.hidden-table__dot
+  padding 20px 0 15px 0
+  background url("static/hidden-table__dot.svg") repeat-x
+  display none
+
+.hidden-table
+  width 100%
+  border-collapse collapse
+  font-size 15px
+
+.hidden-table__data
+  text-align center
+  padding 11px 0
+
+  &_left
+    text-align left
+
+.table__checkbox:checked + .table__content .hidden-table__dot
+  display block
