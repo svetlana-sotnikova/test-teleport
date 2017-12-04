@@ -16,8 +16,18 @@
   .table__row:last-child > .table__data > &
     border-bottom @border-top
 
-  .table__row:nth-child(even) > .table__data > &
+  .table__row:nth-child(odd) > .table__data > &
     background cWhiteGrey
+
+.table__content_header
+  border-top 1px solid cLightGrey
+  background cGrey3 !important
+  color cGrey4
+
+.table__content_footer
+  border-bottom 1px solid cLightGrey !important
+  background cGrey3 !important
+  color cGrey4
 
 .table__checkbox
   display none

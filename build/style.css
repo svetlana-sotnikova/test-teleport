@@ -1,15 +1,22 @@
 @font-face {
   font-family: 'Myriad Pro';
   src: url("static/fonts/myriadpro-light.eot");
-  src: local('static/fonts/myriadpro-light'), url("static/fonts/myriadpro-light.eot?#iefix") format('embedded-opentype'), url("static/fonts/myriadpro-light.woff") format('woff'), url("static/fonts/myriadpro-light.ttf") format('truetype'), url("static/fonts/myriadpro-light.svg#myriadpro-light") format('svg');
+  src: local('Myriad Pro Light'), url("static/fonts/myriadpro-light.eot?#iefix") format('embedded-opentype'), url("static/fonts/myriadpro-light.woff") format('woff'), url("static/fonts/myriadpro-light.ttf") format('truetype'), url("static/fonts/myriadpro-light.svg#myriadpro-light") format('svg');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Myriad Pro';
   src: url("static/fonts/myriadpro-regular.eot");
-  src: local('static/fonts/myriadpro-regular'), url("static/fonts/myriadpro-regular.eot?#iefix") format('embedded-opentype'), url("static/fonts/myriadpro-regular.woff") format('woff'), url("static/fonts/myriadpro-regular.ttf") format('truetype'), url("static/fonts/myriadpro-regular.svg#myriadpro-regular") format('svg');
+  src: local('Myriad Pro Regular'), url("static/fonts/myriadpro-regular.eot?#iefix") format('embedded-opentype'), url("static/fonts/myriadpro-regular.woff") format('woff'), url("static/fonts/myriadpro-regular.ttf") format('truetype'), url("static/fonts/myriadpro-regular.svg#myriadpro-regular") format('svg');
   font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("static/myriadpro-semibold.eot");
+  src: local('Myriad Pro Semibold'), url("static/myriadpro-semibold.eot?#iefix") format('embedded-opentype'), url("static/myriadpro-semibold.woff") format('woff'), url("static/myriadpro-semibold.ttf") format('truetype'), url("static/myriadpro-semibold.svg#MyriadPro-Semibold") format('svg');
+  font-weight: 600;
   font-style: normal;
 }
 .clearfix:after {
@@ -49,6 +56,7 @@
   font-family: 'Myriad Pro';
   font-size: 16px;
   font-weight: 300;
+  font-style: normal;
   line-height: 1.2;
   color: #101026;
 }
@@ -59,6 +67,13 @@
 .button__active,
 .table__checkbox:checked + .table__content .inner-table {
   font-weight: normal;
+  font-style: normal;
+}
+.text__semibold,
+.inner-table_semibold,
+.pages__item_active {
+  font-weight: 600;
+  font-style: normal;
 }
 .basis {
   margin: 0;
@@ -285,8 +300,18 @@ input.period__input::-webkit-calendar-picker-indicator {
 .table__row:last-child > .table__data > .table__content {
   border-bottom: 1px solid #e7ecf0;
 }
-.table__row:nth-child(even) > .table__data > .table__content {
+.table__row:nth-child(odd) > .table__data > .table__content {
   background: #fbfcfd;
+}
+.table__content_header {
+  border-top: 1px solid #c3ccd3;
+  background: #f3f4f9 !important;
+  color: #6f6f74;
+}
+.table__content_footer {
+  border-bottom: 1px solid #c3ccd3 !important;
+  background: #f3f4f9 !important;
+  color: #6f6f74;
 }
 .table__checkbox {
   display: none;
@@ -334,6 +359,9 @@ input.period__input::-webkit-calendar-picker-indicator {
   border-collapse: collapse;
   font-size: 15px;
 }
+.inner-table_padding {
+  padding-left: 20px !important;
+}
 .inner-table__data {
   text-align: center;
   padding: 26px 0;
@@ -360,6 +388,7 @@ input.period__input::-webkit-calendar-picker-indicator {
   width: 100%;
   border-collapse: collapse;
   font-size: 15px;
+  color: #6f6f74;
 }
 .hidden-table__data {
   text-align: center;
@@ -370,4 +399,38 @@ input.period__input::-webkit-calendar-picker-indicator {
 }
 .table__checkbox:checked + .table__content .hidden-table__dot {
   display: block;
+}
+.pages {
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+.pages__arrow-left {
+  float: left;
+  background: url("static/pages__arrow-left.svg") no-repeat;
+  background-size: 10px 14px;
+  width: 10px;
+  height: 14px;
+  margin: 7px 10px 7px 0;
+}
+.pages__items {
+  float: left;
+}
+.pages__item {
+  float: left;
+  min-width: 22px;
+  padding: 3px 4px;
+  text-align: center;
+}
+.pages__item_active {
+  background: #06a8ff;
+  border-radius: 3px;
+  color: #fff;
+}
+.pages__arrow-right {
+  float: left;
+  background: url("static/pages__arrow-right.svg") no-repeat;
+  background-size: 10px 14px;
+  width: 10px;
+  height: 14px;
+  margin: 7px 0 7px 11px;
 }

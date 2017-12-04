@@ -5,13 +5,16 @@ cGrey = #95969e
 cCyan = #06a8ff
 cWhiteGrey = #fbfcfd
 cGrey2 = #e7ecf0
+cGrey3 = #f3f4f9
+cGrey4 = #6f6f74
 cSky = #f2fafe
+cWhite = #fff
 
 // Fonts
 @font-face
   font-family 'Myriad Pro'
   src url('static/fonts/myriadpro-light.eot')
-  src local('static/fonts/myriadpro-light'),
+  src local('Myriad Pro Light'),
       url('static/fonts/myriadpro-light.eot?#iefix') format('embedded-opentype'),
       url('static/fonts/myriadpro-light.woff') format('woff'),
       url('static/fonts/myriadpro-light.ttf') format('truetype'),
@@ -22,13 +25,24 @@ cSky = #f2fafe
 @font-face
   font-family 'Myriad Pro'
   src url('static/fonts/myriadpro-regular.eot')
-  src local('static/fonts/myriadpro-regular'),
+  src local('Myriad Pro Regular'),
       url('static/fonts/myriadpro-regular.eot?#iefix') format('embedded-opentype'),
       url('static/fonts/myriadpro-regular.woff') format('woff'),
       url('static/fonts/myriadpro-regular.ttf') format('truetype'),
       url('static/fonts/myriadpro-regular.svg#myriadpro-regular') format('svg')
   font-weight normal
   font-style normal
+
+@font-face
+    font-family 'Myriad Pro'
+    src url('static/myriadpro-semibold.eot')
+    src local('Myriad Pro Semibold'),
+        url('static/myriadpro-semibold.eot?#iefix') format('embedded-opentype'),
+        url('static/myriadpro-semibold.woff') format('woff'),
+        url('static/myriadpro-semibold.ttf') format('truetype'),
+        url('static/myriadpro-semibold.svg#MyriadPro-Semibold') format('svg')
+    font-weight 600
+    font-style normal
 
 
 // Cleafix function and class
@@ -64,11 +78,18 @@ clearfix()
   font-family 'Myriad Pro'
   font-size 16px
   font-weight 300
+  font-style normal
   line-height 1.2
   color cDarkBlue
 
 .text__regular
   font-weight normal
+  font-style normal
+
+.text__semibold
+  font-weight 600
+  font-style normal
+
 
 .basis
   @extends .text__simple
@@ -98,3 +119,5 @@ clearfix()
 @require 'blocks/table/table.styl'
 @require 'blocks/inner-table/inner-table.styl'
 @require 'blocks/hidden-table/hidden-table.styl'
+@require 'blocks/pages/pages.styl'
+
