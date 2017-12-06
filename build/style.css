@@ -52,7 +52,8 @@
 .content__h1,
 .period__input,
 .field__label,
-.field__input {
+.field__input,
+.footer__link {
   font-family: 'Myriad Pro';
   font-size: 16px;
   font-weight: 300;
@@ -80,7 +81,8 @@
 }
 .basis__elem,
 .content__h1 {
-  width: 960px;
+  min-width: 960px;
+  max-width: 1160px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -358,6 +360,10 @@ input.period__input::-webkit-calendar-picker-indicator {
   width: 100%;
   border-collapse: collapse;
   font-size: 15px;
+  line-height: 1.25;
+}
+.inner-table_footer .inner-table__data {
+  padding: 27px 0;
 }
 .inner-table_padding {
   padding-left: 20px !important;
@@ -388,6 +394,7 @@ input.period__input::-webkit-calendar-picker-indicator {
   width: 100%;
   border-collapse: collapse;
   font-size: 15px;
+  line-height: 1.27;
   color: #6f6f74;
 }
 .hidden-table__data {
@@ -403,34 +410,103 @@ input.period__input::-webkit-calendar-picker-indicator {
 .pages {
   margin-bottom: 80px;
   font-size: 20px;
+  margin: 0 auto;
+  border-collapse: collapse;
 }
 .pages__arrow-left {
-  float: left;
   background: url("static/pages__arrow-left.svg") no-repeat;
   background-size: 10px 14px;
   width: 10px;
   height: 14px;
   margin: 7px 10px 7px 0;
-}
-.pages__items {
-  float: left;
+  background-position: left center;
 }
 .pages__item {
-  float: left;
   min-width: 22px;
   padding: 3px 4px;
   text-align: center;
+  color: #101026;
+}
+.pages__item:hover {
+  border: 1px solid #c3ccd3;
+  border-radius: 3px;
+  padding: 2px 3px;
 }
 .pages__item_active {
   background: #06a8ff;
   border-radius: 3px;
   color: #fff;
 }
+.pages__item_active:hover {
+  border: none;
+  padding: 3px 4px;
+}
 .pages__arrow-right {
-  float: left;
   background: url("static/pages__arrow-right.svg") no-repeat;
   background-size: 10px 14px;
   width: 10px;
   height: 14px;
   margin: 7px 0 7px 11px;
+  background-position: left center;
+}
+.pages__link {
+  text-decoration: none;
+  display: block;
+}
+.footer {
+  padding: 21px 0;
+  margin-top: 80px;
+  border-top: 1px solid #c3ccd3;
+}
+.footer__left {
+  float: left;
+  line-height: 1.25;
+}
+.footer__links {
+  float: left;
+  padding: 9px 0;
+}
+.footer__link {
+  line-height: 1.25;
+  float: left;
+  margin: 0 14px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #06a8ff;
+}
+.footer__link:first-child {
+  margin-left: 0;
+}
+.footer__arrow {
+  background: url("static/footer__arrow.svg") no-repeat;
+  background-size: 32px 18px;
+  width: 32px;
+  height: 18px;
+  margin: 0 30px 0 45px;
+}
+.footer__right {
+  float: right;
+  line-height: 1.25;
+}
+.footer__right-link {
+  display: block;
+  text-decoration: none;
+  color: #101026;
+}
+.skype__label {
+  font-size: 14px;
+  line-height: 1.2;
+  float: left;
+  color: #95969e;
+}
+.skype__icon {
+  float: left;
+  background: url("static/footer__skype.svg") no-repeat;
+  background-size: 11px 12px;
+  width: 11px;
+  height: 12px;
+  margin: 2px 3px 2px 0;
+}
+.skype__login {
+  font-size: 18px;
 }

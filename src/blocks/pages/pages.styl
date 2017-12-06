@@ -1,23 +1,27 @@
 .pages
   margin-bottom 80px
   font-size 20px
+  margin 0 auto
+  border-collapse collapse
 
 .pages__arrow-left
-  float left
   background url('static/pages__arrow-left.svg') no-repeat
   background-size 10px 14px
   width 10px
   height 14px
   margin 7px 10px 7px 0
-
-.pages__items
-  float left
+  background-position left center
 
 .pages__item
-  float left
   min-width 22px
   padding 3px 4px
   text-align center
+  color cDarkBlue
+
+  &:hover
+    border 1px solid cLightGrey
+    border-radius 3px
+    padding 2px 3px
 
 .pages__item_active
   @extends .text__semibold
@@ -25,10 +29,18 @@
   border-radius 3px
   color cWhite
 
+  &:hover
+    border none
+    padding 3px 4px
+
 .pages__arrow-right
-  float left
   background url('static/pages__arrow-right.svg') no-repeat
   background-size 10px 14px
   width 10px
   height 14px
   margin 7px 0 7px 11px
+  background-position left center
+
+.pages__link
+  text-decoration none
+  display block
