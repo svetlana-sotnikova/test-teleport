@@ -22,11 +22,24 @@
 
 .header__link
   @extends .text__simple
+  position relative
   line-height 1.25
   float left
   margin 0 14px
   font-size 16px
   text-decoration none
+
+  &:hover:after, &_active:after
+    position absolute
+    display block
+    content " "
+    width 100%
+    height 4px
+    background cCyan
+    bottom -30px
+
+  &_active
+    @extends .text__regular
 
 // .header__link:hover
 //   border-bottom 4px solid #06a8ff
@@ -37,9 +50,25 @@
 
 .header__skype-wrapper
   float left
-  padding 2px 19px
-  border-left 1px solid cLightGrey
-  border-right 1px solid cLightGrey
+  padding 2px 20px
+  position relative
+
+  &:before, &:after
+    content " "
+    position absolute
+    left 0
+    top 0
+    bottom 0
+    margin auto
+    display block
+    background cLightGrey
+    width 1px
+    height 20px
+
+  &:after
+    right 0
+    left auto
+
 
 .header__skype
   display block

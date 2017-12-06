@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" style="min-width: 1000px;">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -12,7 +12,7 @@
       <div class="basis__elem clearfix">
         <div class="header__left clearfix">
           <div class="header__logo"></div>
-          <div class="header__links clearfix"><a class="header__link text__regular" href="#">Статистика</a><a class="header__link" href="#">Офферы</a><a class="header__link" href="#">API</a><a class="header__link" href="#">Инструменты</a><a class="header__link" href="#">Профиль</a></div>
+          <div class="header__links clearfix"><a class="header__link header__link_active" href="#">Статистика</a><a class="header__link" href="#">Офферы</a><a class="header__link" href="#">API</a><a class="header__link" href="#">Инструменты</a><a class="header__link" href="#">Профиль</a></div>
         </div>
         <div class="header__right clearfix">
           <div class="header__skype-wrapper"><a class="header__skype" href="#"></a></div>
@@ -63,11 +63,11 @@
                 <table class="inner-table">
                   <tr class="inner-table__row">
                     <td class="inner-table__data inner-table__data_left table__col1 inner-table_padding">Название</td>
-                    <td class="inner-table__data table__col2">Клики / Уникальные</td>
-                    <td class="inner-table__data table__col3">Анкеты / Конверсия %</td>
+                    <td class="inner-table__data table__col2">Клики /<br> Уникальные</td>
+                    <td class="inner-table__data table__col3">Анкеты /<br> Конверсия %</td>
                     <td class="inner-table__data table__col4">В работе</td>
                     <td class="inner-table__data table__col5">Отказы</td>
-                    <td class="inner-table__data table__col6">Продажи / Конверсия %</td>
+                    <td class="inner-table__data table__col6">Продажи /<br> Конверсия %</td>
                     <td class="inner-table__data table__col7">EPL</td>
                     <td class="inner-table__data table__col8">EPC</td>
                     <td class="inner-table__data table__col9">EPP</td>
@@ -486,19 +486,21 @@
           </td>
         </tr>
       </table>
-      <table class="pages">
-        <tr>
-          <td style="padding: 0;"><a class="pages__link pages__arrow-left" href="#"></a></td>
-          <td style="padding: 0;"><a class="pages__link pages__item" href="#">1</a></td>
-          <td style="padding: 0;"><a class="pages__link pages__item pages__item_active" href="#">2</a></td>
-          <td style="padding: 0;"><a class="pages__link pages__item" href="#">3</a></td>
-          <td style="padding: 0;"><a class="pages__link pages__item" href="#">4</a></td>
-          <td style="padding: 0;"><a class="pages__link pages__item" href="#">5</a></td>
-          <td style="padding: 0;"><a class="pages__link pages__item" href="#">6</a></td>
-          <td style="padding: 0;"><a class="pages__link pages__item" href="#">7</a></td>
-          <td style="padding: 0;"><a class="pages__link pages__arrow-right" href="#"></a></td>
-        </tr>
-      </table>
+      <div class="basis__elem">
+        <table class="pages">
+          <tr>
+            <td style="padding: 0;"><a class="pages__link pages__arrow-left" href="#"></a></td>
+            <td style="padding: 0;"><a class="pages__link pages__item" href="#">1</a></td>
+            <td style="padding: 0;"><a class="pages__link pages__item pages__item_active" href="#">2</a></td>
+            <td style="padding: 0;"><a class="pages__link pages__item" href="#">3</a></td>
+            <td style="padding: 0;"><a class="pages__link pages__item" href="#">4</a></td>
+            <td style="padding: 0;"><a class="pages__link pages__item" href="#">5</a></td>
+            <td style="padding: 0;"><a class="pages__link pages__item" href="#">6</a></td>
+            <td style="padding: 0;"><a class="pages__link pages__item" href="#">7</a></td>
+            <td style="padding: 0;"><a class="pages__link pages__arrow-right" href="#"></a></td>
+          </tr>
+        </table>
+      </div>
     </div>
     <div class="footer">
       <div class="basis__elem clearfix">
@@ -508,7 +510,7 @@
         <div class="footer__right"><a class="footer__right-link clearfix" href="#">
             <div class="skype__icon"></div>
             <div class="skype__label">тех. поддержка</div>
-            <div class="skypee__login">Support-Teleport</div></a></div>
+            <div class="skype__login">Support-Teleport</div></a></div>
       </div>
     </div>
   </body>
